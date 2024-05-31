@@ -330,7 +330,17 @@ const myCountry = {
     capital: `Brasilia`,
     language: `Portuguese`,
     population: 210,
-    neighbours: [ `Uruguai`, `Argentina`, `Paraguai`, `Bolívia`, `Peru`, `Colômbia`, `Venezuela`, `Guiana`, `Suriname`]
+    neighbours: [ `Uruguai`, `Argentina`, `Paraguai`, `Bolívia`, `Peru`, `Colômbia`, `Venezuela`, `Guiana`, `Suriname`],
+
+    describe : function()
+    {
+        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`);
+    },
+
+    checkIsland : function()
+    {
+        return this.neighbours.length >= 1 ? false : true;
+    },
 }
 
 // end of lecture 17
@@ -341,3 +351,18 @@ const myCountry = {
 // Increase the country's population by two million using dot notation, and then decrease it by two million using bracket notation.
 
 console.log(`${myCountry.country} has ${myCountry.population} million ${language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+
+// end of lecture 18
+
+
+// lecture 19
+// Add a method called describe to the myCountry object. This method will log a string to the console, similar to the string logged in the previous assignment, but this time using the 'this' keyword.
+
+// Call the describe method.
+
+// Add a method called checkIsland to the myCountry object. This method will set a new property on the object, called isIsland. isIsland will be true if there are no neighbouring countries, and false if there are. Use the ternary operator to set the property.
+
+myCountry.describe();
+console.log(myCountry.checkIsland());
+
+// end of lecture 19
