@@ -321,3 +321,23 @@ neighbourCountries[neighbourCountries.indexOf(`Norway`)] = `Constitutional Monar
 showNeighbours();
 
 // end of lecture 16
+
+// lecture 17
+// Create an object called myCountry for a country of your choice, containing properties country, capital, language, population and neighbours (an array like we used in previous assignments).
+
+const myCountry = {
+    country: `Brazil`,
+    capital: `Brasilia`,
+    language: `Portuguese`,
+    population: 210,
+    neighbours: [ `Uruguai`, `Argentina`, `Paraguai`, `Bolívia`, `Peru`, `Colômbia`, `Venezuela`, `Guiana`, `Suriname`]
+}
+
+// end of lecture 17
+
+// lecture 18
+// Using the object from the previous assignment, log a string like this to the console: 'Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki'.
+
+// Increase the country's population by two million using dot notation, and then decrease it by two million using bracket notation.
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
