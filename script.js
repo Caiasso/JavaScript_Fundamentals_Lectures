@@ -2,8 +2,8 @@
 // Declare variables called country, continent and population and assign their values according to your own country (population in millions).
 // Log their values to the console.
 
-let country = 'Brazil';
-let continent = 'America';
+let country = "Brazil";
+let continent = "America";
 let population = 210;
 
 console.log(country);
@@ -11,7 +11,6 @@ console.log(continent);
 console.log(population);
 
 // end of lecture 1.
-
 
 // lecture 2:
 // Declare a variable called isIsland and set its value according to your country. The variable should hold a Boolean value. Also declare a variable language, but don't assign it any value yet.
@@ -21,9 +20,9 @@ console.log(population);
 let isIsland = false;
 let language;
 
-console.log(typeof isIsland)
-console.log(typeof population)
-console.log(typeof language)
+console.log(typeof isIsland);
+console.log(typeof population);
+console.log(typeof language);
 
 // end of lecture 2
 
@@ -32,9 +31,13 @@ console.log(typeof language)
 // Think about which variables should be const variables (which values will never change, and which might change?). Then, change these variables to const.
 // Try to change one of the changed variables now, and observe what happens.
 
-language = 'Portuguese';
-console.log("Country, continent and language should be const, those variables will never change. Populatuin should stay as a let, it changes with time.");
-console.log("The variables turned into const cannot be changed, consts are constants, it is not possible to assign it once it has a value.");
+language = "Portuguese";
+console.log(
+  "Country, continent and language should be const, those variables will never change. Populatuin should stay as a let, it changes with time."
+);
+console.log(
+  "The variables turned into const cannot be changed, consts are constants, it is not possible to assign it once it has a value."
+);
 
 // end of lecture 3
 
@@ -49,7 +52,11 @@ console.log("The variables turned into const cannot be changed, consts are const
 
 // Based on the variables you created, create a new variable description which contains a string with this format: 'Portugal is in Europe, and its 11 million people speak portuguese'.
 
-console.log('Each half of the territory would have a population of: '  + (population/2) + 'million citizens.');
+console.log(
+  "Each half of the territory would have a population of: " +
+    population / 2 +
+    "million citizens."
+);
 
 population++;
 
@@ -59,7 +66,14 @@ console.log(population > 6);
 
 console.log(population < 33);
 
-let description = (country + ' is in ' + continent + ', and its ' + population + ' million people speak '+ language);
+let description =
+  country +
+  " is in " +
+  continent +
+  ", and its " +
+  population +
+  " million people speak " +
+  language;
 
 console.log(description);
 
@@ -77,26 +91,22 @@ console.log(descriptionNew);
 const age = 19;
 const isOldEnough = age >= 18;
 
-if(isOldEnough)
-    {
-        console.log(`You are old enough do drive!`)
-    }
-    else
-    {
-        console.log(`You are not old enough to drive, wait ${(19 - age)} more years.`);
-    }
+if (isOldEnough) {
+  console.log(`You are old enough do drive!`);
+} else {
+  console.log(`You are not old enough to drive, wait ${19 - age} more years.`);
+}
 // If your country's population is greater than 33 million, log a string like this to the console: "Portugal's population is 22 million below average" (the 22 is the average of 33 minus the country's population).
 
 // After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.
 
-if(population > 33)
-    {
-        console.log(`${country}'s population is above the average.`);
-    }
-    else
-    {
-        console.log(`${country}'s population is ${(33 - population)} million below the average.`);
-    }
+if (population > 33) {
+  console.log(`${country}'s population is above the average.`);
+} else {
+  console.log(
+    `${country}'s population is ${33 - population} million below the average.`
+  );
+}
 // end of lecture 6
 
 // lecture 7
@@ -144,14 +154,11 @@ if(population > 33)
 
 // Probably your country does not meet all the criteria. So go back and temporarily change some variables in order to make the condition true (unless you live in Canada :D).
 
-if(language === `english` && population < 50 && !isIsland)
-    {
-        console.log(`You should live in ${country} :)`)
-    }
-    else
-    {
-        console.log(`${country} does not match your criteria :(`);
-    }
+if (language === `english` && population < 50 && !isIsland) {
+  console.log(`You should live in ${country} :)`);
+} else {
+  console.log(`${country} does not match your criteria :(`);
+}
 
 // end of lecture 8
 
@@ -170,26 +177,25 @@ if(language === `english` && population < 50 && !isIsland)
 
 // for all other simply log 'Great language too :D'.
 
-switch(language)
-{
-    case `chinese`:
-        console.log(`MOST number of native speakers!`);
-        break;
-    case `spanish`:
-        console.log(`2nd place in number of native speakers`);
-        break;
-    case `english`:
-        console.log(`3rd place`);
-        break;
-    case `hindi`:
-        console.log(`number 4`);
-        break;
-    case `arabic`:
-        console.log(`5th most spoken language`);
-        break;
-    default:
-        console.log(`Great language too :D`);
-        break;
+switch (language) {
+  case `chinese`:
+    console.log(`MOST number of native speakers!`);
+    break;
+  case `spanish`:
+    console.log(`2nd place in number of native speakers`);
+    break;
+  case `english`:
+    console.log(`3rd place`);
+    break;
+  case `hindi`:
+    console.log(`number 4`);
+    break;
+  case `arabic`:
+    console.log(`5th most spoken language`);
+    break;
+  default:
+    console.log(`Great language too :D`);
+    break;
 }
 
 // end of lecture 9
@@ -199,7 +205,11 @@ switch(language)
 
 // After checking the result, change the population temporarily to 13 and then to 130. See the different results, and set the population back to original.
 
-console.log(`${country}'s population is ${population > 33 ? `above` :`below`} the average.`);
+console.log(
+  `${country}'s population is ${
+    population > 33 ? `above` : `below`
+  } the average.`
+);
 
 // end of lecture 10
 
@@ -208,10 +218,9 @@ console.log(`${country}'s population is ${population > 33 ? `above` :`below`} th
 
 // Call this function 3 times, with input data for 3 different countries. Store the returned values in 3 different variables, and log them to the console.
 
-function describeCountry(country, population, capitalCity)
-{
-    const description = `\n${country} has ${population} million people and its capital is ${capitalCity}.`;
-    return description;
+function describeCountry(country, population, capitalCity) {
+  const description = `\n${country} has ${population} million people and its capital is ${capitalCity}.`;
+  return description;
 }
 
 const descBrazil = describeCountry(country, population, `Brasilia`);
@@ -231,10 +240,9 @@ console.log(descBrazil, descJapan, descDenmark);
 
 // Create a function expression which does the exact same thing, called percentageOfWolrd2, and also call it with 3 country populations (can be the same populations).
 
-function percentageOfWorld1(population)
-{
-    const percentage = `${((population / 7900) * 100)}%`;
-    return percentage;
+function percentageOfWorld1(population) {
+  const percentage = `${(population / 7900) * 100}%`;
+  return percentage;
 }
 
 const percentChina = percentageOfWorld1(1300);
@@ -248,7 +256,7 @@ console.log(`${percentChina}\n${percentBrazil}\n${percentageJapan}`);
 // lecture 13
 // Recreate the last assignment, but this time create an arrow function called percentageOfWorld3.
 
-const percentageOfWorld3 = population => (population / 7900) * 100;
+const percentageOfWorld3 = (population) => (population / 7900) * 100;
 
 const percentChina2 = percentageOfWorld3(1300);
 const percentBrazil2 = percentageOfWorld3(population);
@@ -265,7 +273,10 @@ console.log(`${percentChina2}\n${percentBrazil2}\n${percentJapan2}`);
 
 // Call describePopulation with data for 3 countries of your choice.
 
-const describePopulation = (country, population) => `${country} has ${population} million people, wich is about ${percentageOfWorld1(population)} of the world's population`;
+const describePopulation = (country, population) =>
+  `${country} has ${population} million people, wich is about ${percentageOfWorld1(
+    population
+  )} of the world's population`;
 
 console.log(describePopulation(country, population));
 console.log(describePopulation(`China`, 1300));
@@ -284,7 +295,12 @@ const populations = [population, 1300, 125, 314];
 
 console.log(populations.length === 4);
 
-const percentages = [percentageOfWorld1(populations[0]), percentageOfWorld1(populations[1]), percentageOfWorld1(populations[2]), percentageOfWorld1(populations[3])];
+const percentages = [
+  percentageOfWorld1(populations[0]),
+  percentageOfWorld1(populations[1]),
+  percentageOfWorld1(populations[2]),
+  percentageOfWorld1(populations[3]),
+];
 console.log(percentages);
 
 // end of lecture 15
@@ -301,7 +317,9 @@ console.log(percentages);
 // Change the name of one of your neighbouring countries. To do that, find the index of the country in the neighbours array, and then use that index to change the array at that index position. For example, you can search for 'Sweden' in the array, and then replace it with 'Republic of Sweden'.
 
 const neighbourCountries = [`Norway`, `Denmark`, `Finland`];
-const showNeighbours = function(){console.log(neighbourCountries)};
+const showNeighbours = function () {
+  console.log(neighbourCountries);
+};
 showNeighbours();
 
 neighbourCountries.push(`Utopia`);
@@ -310,14 +328,22 @@ showNeighbours();
 neighbourCountries.pop();
 showNeighbours();
 
-const centralEuropeanCheck = function() {console.log(!neighbourCountries.includes(`Germany`) ? `Probabbly not a central european country :D` : `Probably a central european country ^^`)};
+const centralEuropeanCheck = function () {
+  console.log(
+    !neighbourCountries.includes(`Germany`)
+      ? `Probabbly not a central european country :D`
+      : `Probably a central european country ^^`
+  );
+};
 
 centralEuropeanCheck();
 neighbourCountries.unshift(`Germany`);
 centralEuropeanCheck();
 neighbourCountries.shift();
 
-neighbourCountries[neighbourCountries.indexOf(`Norway`)] = `Constitutional Monarchy of Norway`;
+neighbourCountries[
+  neighbourCountries.indexOf(`Norway`)
+] = `Constitutional Monarchy of Norway`;
 showNeighbours();
 
 // end of lecture 16
@@ -326,22 +352,32 @@ showNeighbours();
 // Create an object called myCountry for a country of your choice, containing properties country, capital, language, population and neighbours (an array like we used in previous assignments).
 
 const myCountry = {
-    country: `Brazil`,
-    capital: `Brasilia`,
-    language: `Portuguese`,
-    population: 210,
-    neighbours: [ `Uruguai`, `Argentina`, `Paraguai`, `Bolívia`, `Peru`, `Colômbia`, `Venezuela`, `Guiana`, `Suriname`],
+  country: `Brazil`,
+  capital: `Brasilia`,
+  language: `Portuguese`,
+  population: 210,
+  neighbours: [
+    `Uruguai`,
+    `Argentina`,
+    `Paraguai`,
+    `Bolívia`,
+    `Peru`,
+    `Colômbia`,
+    `Venezuela`,
+    `Guiana`,
+    `Suriname`,
+  ],
 
-    describe : function()
-    {
-        console.log(`${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`);
-    },
+  describe: function () {
+    console.log(
+      `${this.country} has ${this.population} million ${this.language}-speaking people, ${this.neighbours.length} neighbouring countries and a capital called ${this.capital}`
+    );
+  },
 
-    checkIsland : function()
-    {
-        return this.neighbours.length >= 1 ? false : true;
-    },
-}
+  checkIsland: function () {
+    return this.neighbours.length >= 1 ? false : true;
+  },
+};
 
 // end of lecture 17
 
@@ -350,10 +386,11 @@ const myCountry = {
 
 // Increase the country's population by two million using dot notation, and then decrease it by two million using bracket notation.
 
-console.log(`${myCountry.country} has ${myCountry.population} million ${language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`);
+console.log(
+  `${myCountry.country} has ${myCountry.population} million ${language}-speaking people, ${myCountry.neighbours.length} neighbouring countries and a capital called ${myCountry.capital}`
+);
 
 // end of lecture 18
-
 
 // lecture 19
 // Add a method called describe to the myCountry object. This method will log a string to the console, similar to the string logged in the previous assignment, but this time using the 'this' keyword.
@@ -370,10 +407,65 @@ console.log(myCountry.checkIsland());
 // lecture 20
 // There are elections in your country! in a small town, there are only 50 voters. Use a for loop to simulate the 50 people voting, by logging a string like this to the console (for numbers 1 to 50): 'Voter number 1 is currently voting'.
 
-for(let voter = 1; voter <= 50; voter++)
-    {
-        console.log(`Voter number ${voter} is currently voting!`);
-    }
+for (let voter = 1; voter <= 50; voter++) {
+  console.log(`Voter number ${voter} is currently voting!`);
+}
 
 // end of lecture 20
 
+// lecture 21
+// Let's bring back the populations array from a previous assignment.
+
+// Use a for loop to compute an array called percentages2 containing the percentages of the world population for the 4 population values. Use the function percentageWOrld1 that you created earlier.
+
+// Confirm that percentages2 contains exactly the same values as the percentages array that we created manually in the previous assignment, and reflect on how much better this solution is.
+
+let percentage2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+  percentage2.push(percentageOfWorld1(populations[i]));
+}
+console.log(percentage2);
+
+// end of lecture 21
+
+// lecture 22
+// Store this array of arrays into a variable called listOfNeighbours:
+
+// [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+// Log only the neighbouring countries to the console, one by one, not the entire arrays. Log a string like 'Neighbour: Canada' for each country.
+
+// You will need a loop inside a loop for this. This is actually a bit tricky, so don't worry if it's too difficult for you! But you can still try to figure this out anyway 😉
+
+const listOfNeighbours = [
+  ["Canada", "Mexico"],
+  ["Spain"],
+  ["Norway", "Sweden", "Russia"],
+];
+
+for (let i = 0; i < listOfNeighbours.length; i++) {
+  for (let neighbour = 0; neighbour < listOfNeighbours[i].length; neighbour++) {
+    console.log(`Neighbour: ${listOfNeighbours[i][neighbour]}`);
+  }
+}
+
+// end of lecture 22
+
+// lecture 23
+// Recreate the challenge from the lecture Looping Arrays, Breaking and Continuing, but this time using a while loop (call the array percentages3).
+
+// Reflect on what solution you like better for this task: the for loop or the while loop?
+
+let percentage3 = [];
+let i = 0;
+
+while (percentage3.length < populations.length) {
+  percentage3.push(percentageOfWorld1(populations[i]));
+  i++;
+}
+console.log(percentage2);
+console.log(percentage3);
+
+// end of lecture 23
+
+//////////////////////////////////////// DATA STRUCTURES ////////////////////////////////////////
