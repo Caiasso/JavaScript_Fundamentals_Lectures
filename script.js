@@ -1,3 +1,6 @@
+// LEARNING JS #1 --- Lectures 1
+
+
 // lecture 1:
 // Declare variables called country, continent and population and assign their values according to your own country (population in millions).
 // Log their values to the console.
@@ -468,4 +471,7 @@ console.log(percentage3);
 
 // end of lecture 23
 
-//////////////////////////////////////// DATA STRUCTURES ////////////////////////////////////////
+
+// End of lectures 1 ---------- Learning JS #1 completed!
+
+//////////////////////////////////////// DATA STRUCTURES FROM NOW ON. LESGOOOOOOOO ^^ ////////////////////////////////////////
